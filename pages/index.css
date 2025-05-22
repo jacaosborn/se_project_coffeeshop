@@ -65,7 +65,7 @@ body {
   letter-spacing: -0.6px;
 }
 
-.header__title__span-accent {
+.header__title__span_accent {
   display: block;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
@@ -102,7 +102,7 @@ body {
   color: #6f6f6f;
 }
 
-.header__footer__paragraph {
+.header__footer_paragraph {
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -110,7 +110,7 @@ body {
   margin: 0 80px 40px 80px;
 }
 
-.header__footer__paragraph__content {
+.header__footer_paragraph_content {
   list-style-type: none;
 }
 
