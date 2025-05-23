@@ -46,8 +46,8 @@ body {
   justify-content: space-evenly;
   position: relative;
   right: 50px;
-
   font-weight: 500;
+  text-decoration: none;
 }
 
 .nav__link {
@@ -65,7 +65,7 @@ body {
   letter-spacing: -0.6px;
 }
 
-.header__title__span_accent {
+.header__span_accent {
   display: block;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
@@ -97,12 +97,11 @@ body {
 .header__footer {
   margin-top: auto;
   width: 100%;
-
   font-weight: 500;
   color: #6f6f6f;
 }
 
-.header__footer_paragraph {
+.header__footer-paragraph {
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -110,8 +109,10 @@ body {
   margin: 0 80px 40px 80px;
 }
 
-.header__footer_paragraph_content {
+.header__footer-list {
   list-style-type: none;
+
+  padding-left: 0;
 }
 
 .content {
