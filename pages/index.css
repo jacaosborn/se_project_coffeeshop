@@ -58,7 +58,6 @@ body {
   max-width: 729px;
   height: 80px;
   margin: 183px 0px 28px 80px;
-
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
@@ -69,7 +68,6 @@ body {
   display: block;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
-
   font-size: 60px;
   line-height: 72px;
   color: #3f96f3;
@@ -80,7 +78,6 @@ body {
   padding-top: 28px;
   margin-left: 80px;
   font-family: "Noto Serif", "Times New Roman", serif;
-
   font-size: 20px;
   line-height: 30px;
 }
@@ -111,7 +108,6 @@ body {
 
 .header__footer-list {
   list-style-type: none;
-
   padding-left: 0;
 }
 
@@ -180,33 +176,74 @@ body {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .reservation__title {
   margin: 100px 0 80px 0;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 .reservation__form {
   max-width: 385px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-bottom: 120px;
 }
 
 .form__label {
   margin-bottom: 8px;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__input {
-  border-radius: 4px;
   max-width: 385px;
   margin-bottom: 32px;
+  display: flex;
+  padding: 15px 20px 15px 20px;
+}
+
+.form__input_type_date .form__input_type_text {
+  border: 1px solid #838383;
+}
+
+input::-webkit-input-placeholder {
+  color: #838383;
+}
+input::-moz-placeholder {
+  color: #838383;
+}
+input::-ms-input-placeholder {
+  color: #838383;
+}
+input::placeholder {
+  color: #838383;
+}
+input::-webkit-datetime-edit {
+  color: #838383;
 }
 
 .form__button {
-  border-radius: 4px;
+  width: 385px;
+  border: none;
   background-color: #1878dc;
   transition: background-color ease 1s;
-  /* transition-property: background-color;
-  transition-duration: 1s;
-  transition-timing-function: linear; */
+  padding: 15px 20px 15px 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__button:hover {
@@ -219,12 +256,20 @@ input[type="checkbox"] + span {
   appearance: none;
 }
 
-/* .form__input_type_checkbox {
-  border-radius: 2px;
-} */
+.form__input_checkbox {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+}
 
 .form__input_type_custom-checkbox {
   background-image: url(/images/check.svg);
-  color: #1878dc;
+  background-color: #1878dc;
   border-radius: 2px;
+  margin-right: 12px;
+  padding: 0;
+  height: 20px;
+  width: 20px;
 }
