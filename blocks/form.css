@@ -1,0 +1,82 @@
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-bottom: 120px;
+}
+
+.form__label {
+  margin-bottom: 8px;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  max-width: 385px;
+  margin-bottom: 32px;
+  display: flex;
+  padding: 15px 20px 15px 20px;
+}
+
+.form__input_type_date .form__input_type_text {
+  border: 1px solid #838383;
+}
+
+input::-webkit-input-placeholder {
+  color: #838383;
+}
+input::-moz-placeholder {
+  color: #838383;
+}
+input::-ms-input-placeholder {
+  color: #838383;
+}
+input::placeholder {
+  color: #838383;
+}
+input::-webkit-datetime-edit {
+  color: #838383;
+}
+
+.form__button {
+  width: 385px;
+  border: none;
+  background-color: #1878dc;
+  transition: background-color ease 1s, opacity ease 1s;
+  padding: 15px 20px 15px 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+  opacity: 70%;
+}
+
+input[type="checkbox"] + span {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__input_checkbox {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+}
+
+.form__input_type_custom-checkbox {
+  background-image: url(/images/check.svg);
+  background-color: #1878dc;
+  border-radius: 2px;
+  margin-right: 12px;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+}

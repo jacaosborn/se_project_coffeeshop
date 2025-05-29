@@ -10,7 +10,7 @@
     <meta name="author" content="Jacob Osborn" />
     <meta name="keywords" content="coffee shop, local coffee" />
     <title>Document</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -170,10 +170,121 @@
             </fieldset>
           </form>
         </section>
-        <section class="menu" id="menu"></section>
-        <section class="about" id="about"></section>
+        <section class="menu" id="menu">
+          <h2 class="menu__title">Menu</h2>
+          <p class="menu__subtitle">
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
+          </p>
+          <div class="menu__cards">
+            <ul class="card">
+              <li class="card__title">Filter</li>
+              <li class="card__list-item">
+                Regular (12 oz)<span class="list-divider"></span>$1
+              </li>
+              <li class="card__list-item">
+                Large (16 oz)<span class="list-divider"></span>$1.25
+              </li>
+              <li class="card__list-item">
+                XL (20 oz)<span class="list-divider"></span>$1.5
+              </li>
+              <li class="card__list-item">
+                Party-size (24 oz, decaf)<span class="list-divider"></span>$1.75
+              </li>
+              <li class="card__list-item">
+                Iced Coffee(16 oz)<span class="list-divider"></span>$1.25
+              </li>
+            </ul>
+            <ul class="card">
+              <li class="card__title">Espresso</li>
+              <li class="card__list-item">
+                Macchiato<span class="list-divider"></span>$2.25
+              </li>
+              <li class="card__list-item">
+                Cortado<span class="list-divider"></span>$2.5
+              </li>
+              <li class="card__list-item">
+                Mocha<span class="list-divider"></span>$3
+              </li>
+              <li class="card__list-item">
+                Sunrise in the Bay Area (decaf)<span class="list-divider"></span
+                >$10
+              </li>
+            </ul>
+            <ul class="card">
+              <li class="card__title">Baked Goods</li>
+              <li class="card__list-item">
+                Almond Croissant<span class="list-divider"></span>$2
+              </li>
+              <li class="card__list-item">
+                Banana Bread<span class="list-divider"></span>$1.75
+              </li>
+              <li class="card__list-item">
+                Key Lime Pie<span class="list-divider"></span>$3
+              </li>
+              <li class="card__list-item">
+                Blue Velvet Cake<span class="list-divider"></span>$3.75
+              </li>
+              <li class="card__list-item">
+                Web Cookie<span class="list-divider"></span>$2
+              </li>
+              <li class="card__list-item">
+                Fresh Bug'ette<span class="list-divider"></span>$0.25
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <h2 class="about__title">About the coffee shop</h2>
+          <ul class="about__content">
+            <li class="about__paragraph">
+              Our coffee shop is located in the Triple Peaks Library. It
+              features 6 tables and free WiFi.
+            </li>
+            <li class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </li>
+            <li class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </li>
+          </ul>
+          <div class="about__circle"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__content">
+          <img class="footer__logo" src="/images/logo_coffeeshop_light.svg" />
+
+          <ul class="footer__list">
+            <li class="footer__social-heading">Social media</li>
+            <li class="footer__list-item">
+              <img
+                src="/images/facebook_white.svg"
+                alt="facebook logo"
+                class="footer__social-icon"
+              />
+
+              <a class="footer__social-link" href="https://www.facebook.com"
+                >Facebook</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <img
+                src="/images/instagram_white.svg"
+                alt="Instagram Logo"
+                class="footer__social-icon"
+              />
+              <a class="footer__social-link" href="https://www.instagram.com"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">© Jacob Osborn</p>
+      </footer>
     </div>
   </body>
 </html>
