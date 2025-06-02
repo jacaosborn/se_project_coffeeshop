@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   border: none;
-  margin-bottom: 120px;
+  margin: 0 0 120px 0;
+  padding: 0 0 0 0;
 }
 
 .form__label {
@@ -14,10 +15,13 @@
 }
 
 .form__input {
+  box-sizing: border-box;
+  min-height: 60px;
   max-width: 385px;
   margin-bottom: 32px;
   display: flex;
   padding: 15px 20px 15px 20px;
+  border-radius: 4px;
 }
 
 .form__input_type_date .form__input_type_text {
@@ -50,6 +54,7 @@ input::-webkit-datetime-edit {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  border-radius: 4px;
 }
 
 .form__button:hover {
@@ -63,15 +68,14 @@ input[type="checkbox"] + span {
   appearance: none;
 }
 
-.form__input_checkbox {
+.form__label_type_checkbox {
   margin-top: 32px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: normal;
 }
 
-.form__input_type_custom-checkbox {
+.form__checkbox {
   background-image: url(/images/check.svg);
   background-color: #1878dc;
   border-radius: 2px;

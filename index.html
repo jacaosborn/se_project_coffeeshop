@@ -9,7 +9,7 @@
     />
     <meta name="author" content="Jacob Osborn" />
     <meta name="keywords" content="coffee shop, local coffee" />
-    <title>Document</title>
+    <title>Coffee Shop</title>
 
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="./favicon.ico" />
@@ -38,7 +38,7 @@
         </nav>
 
         <h1 class="header__title">
-          <span class="header__span header__span_accent">Specialty coffee</span>
+          <span class="header__span-accent">Specialty coffee</span>
           in the Triple Peaks Library
         </h1>
 
@@ -52,7 +52,15 @@
           class="header__image"
         />
         <div class="header__footer">
-          <div class="header__footer-paragraph">
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            2200 Success Avenue, The Town of Triple Peaks
+          </p>
+          <!-- <div class="header__footer-paragraph">
             <ul class="header__footer-list">
               <li>Hours:</li>
               <li>Monday - Friday (10:00 - 19:00)</li>
@@ -61,7 +69,7 @@
             <p class="header__address">
               2200 Success Avenue, The Town of Triple Peaks
             </p>
-          </div>
+          </div> -->
         </div>
       </header>
       <main class="content">
@@ -84,8 +92,8 @@
                 allowfullscreen
               ></iframe>
               <div class="recipes__video-caption">
-                <p>Aeropress recipe</p>
-                <p>~5 min</p>
+                <p class="recipes__video-title">Aeropress recipe</p>
+                <p class="recipes__video-duration">~5 min</p>
               </div>
             </div>
 
@@ -101,8 +109,8 @@
               ></iframe>
 
               <div class="recipes__video-caption">
-                <p>French press recipe</p>
-                <p>~15 min</p>
+                <p class="recipes__video-title">French press recipe</p>
+                <p class="recipes__video-duration">~15 min</p>
               </div>
             </div>
           </div>
@@ -147,26 +155,15 @@
               <button type="submit" id="submit" class="form__button">
                 Book a table
               </button>
-              <label class="form__input form__input_checkbox">
+              <label class="form__label form__label_type_checkbox">
                 <input
                   id="terms"
                   type="checkbox"
                   required
-                  class="form__input form__input_type_custom-checkbox"
+                  class="form__checkbox"
                 />
                 <span class="form__label">I agree with the terms of use</span>
               </label>
-
-              <!-- <input
-                id="terms"
-                type="checkbox"
-                required
-                class="form__input form__input_type_checkbox"
-              />
-
-              <label for="terms" class="form__label"
-                >I agree with the terms of use</label
-              > -->
             </fieldset>
           </form>
         </section>
@@ -177,61 +174,70 @@
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <div class="menu__cards">
-            <ul class="card">
-              <li class="card__title">Filter</li>
-              <li class="card__list-item">
-                Regular (12 oz)<span class="list-divider"></span>$1
-              </li>
-              <li class="card__list-item">
-                Large (16 oz)<span class="list-divider"></span>$1.25
-              </li>
-              <li class="card__list-item">
-                XL (20 oz)<span class="list-divider"></span>$1.5
-              </li>
-              <li class="card__list-item">
-                Party-size (24 oz, decaf)<span class="list-divider"></span>$1.75
-              </li>
-              <li class="card__list-item">
-                Iced Coffee(16 oz)<span class="list-divider"></span>$1.25
-              </li>
-            </ul>
-            <ul class="card">
-              <li class="card__title">Espresso</li>
-              <li class="card__list-item">
-                Macchiato<span class="list-divider"></span>$2.25
-              </li>
-              <li class="card__list-item">
-                Cortado<span class="list-divider"></span>$2.5
-              </li>
-              <li class="card__list-item">
-                Mocha<span class="list-divider"></span>$3
-              </li>
-              <li class="card__list-item">
-                Sunrise in the Bay Area (decaf)<span class="list-divider"></span
-                >$10
-              </li>
-            </ul>
-            <ul class="card">
-              <li class="card__title">Baked Goods</li>
-              <li class="card__list-item">
-                Almond Croissant<span class="list-divider"></span>$2
-              </li>
-              <li class="card__list-item">
-                Banana Bread<span class="list-divider"></span>$1.75
-              </li>
-              <li class="card__list-item">
-                Key Lime Pie<span class="list-divider"></span>$3
-              </li>
-              <li class="card__list-item">
-                Blue Velvet Cake<span class="list-divider"></span>$3.75
-              </li>
-              <li class="card__list-item">
-                Web Cookie<span class="list-divider"></span>$2
-              </li>
-              <li class="card__list-item">
-                Fresh Bug'ette<span class="list-divider"></span>$0.25
-              </li>
-            </ul>
+            <div class="card">
+              <h3 class="card__title">Filter</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Regular (12 oz)<span class="list-divider"></span>$1
+                </li>
+                <li class="card__list-item">
+                  Large (16 oz)<span class="list-divider"></span>$1.25
+                </li>
+                <li class="card__list-item">
+                  XL (20 oz)<span class="list-divider"></span>$1.5
+                </li>
+                <li class="card__list-item">
+                  Party-size (24 oz, decaf)<span class="list-divider"></span
+                  >$1.75
+                </li>
+                <li class="card__list-item">
+                  Iced Coffee(16 oz)<span class="list-divider"></span>$1.25
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Espresso</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Macchiato<span class="list-divider"></span>$2.25
+                </li>
+                <li class="card__list-item">
+                  Cortado<span class="list-divider"></span>$2.5
+                </li>
+                <li class="card__list-item">
+                  Mocha<span class="list-divider"></span>$3
+                </li>
+                <li class="card__list-item">
+                  Sunrise in the Bay Area (decaf)<span
+                    class="list-divider"
+                  ></span
+                  >$10
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Baked Goods</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Almond Croissant<span class="list-divider"></span>$2
+                </li>
+                <li class="card__list-item">
+                  Banana Bread<span class="list-divider"></span>$1.75
+                </li>
+                <li class="card__list-item">
+                  Key Lime Pie<span class="list-divider"></span>$3
+                </li>
+                <li class="card__list-item">
+                  Blue Velvet Cake<span class="list-divider"></span>$3.75
+                </li>
+                <li class="card__list-item">
+                  Web Cookie<span class="list-divider"></span>$2
+                </li>
+                <li class="card__list-item">
+                  Fresh Bug'ette<span class="list-divider"></span>$0.25
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <section class="about" id="about">
@@ -256,32 +262,38 @@
       </main>
       <footer class="footer">
         <div class="footer__content">
-          <img class="footer__logo" src="./images/logo_coffeeshop_light.svg" />
+          <img
+            class="footer__logo"
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Coffeshop Logo"
+          />
 
-          <ul class="footer__list">
-            <li class="footer__social-heading">Social media</li>
-            <li class="footer__list-item">
-              <img
-                src="./images/facebook_white.svg"
-                alt="facebook logo"
-                class="footer__social-icon"
-              />
+          <div class="footer__column">
+            <h2 class="footer__social-heading">Social media</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="facebook logo"
+                  class="footer__social-icon"
+                />
 
-              <a class="footer__social-link" href="https://www.facebook.com"
-                >Facebook</a
-              >
-            </li>
-            <li class="footer__list-item">
-              <img
-                src="./images/instagram_white.svg"
-                alt="Instagram Logo"
-                class="footer__social-icon"
-              />
-              <a class="footer__social-link" href="https://www.instagram.com"
-                >Instagram</a
-              >
-            </li>
-          </ul>
+                <a class="footer__social-link" href="https://www.facebook.com"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="Instagram Logo"
+                  class="footer__social-icon"
+                />
+                <a class="footer__social-link" href="https://www.instagram.com"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <p class="footer__copyright">© Jacob Osborn</p>
       </footer>
