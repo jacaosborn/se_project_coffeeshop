@@ -28,6 +28,7 @@
   display: block;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
+  font-weight: normal;
   font-size: 60px;
   line-height: 72px;
   color: #3f96f3;
@@ -35,7 +36,6 @@
 
 .header__description {
   max-width: 683px;
-  padding-top: 28px;
   margin: 0 0 0 80px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;

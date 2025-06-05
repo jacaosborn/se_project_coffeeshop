@@ -3,12 +3,10 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 .card__title {
   margin: 0 0 32px 0;
-  padding: 0 0 0 0;
-  margin-bottom: 32px;
+  padding: 0;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
@@ -26,10 +24,10 @@
   font-size: 16px;
   line-height: 20px;
 }
-.list-divider {
+.card__list-item:last-child {
+  margin: 0;
+}
+.card__list-divider {
   flex-grow: 1;
   border-bottom: 1px solid black;
-}
-.list-divider:last-of-type {
-  margin-bottom: 0;
 }

@@ -1,7 +1,7 @@
 .about {
   margin: auto;
   min-width: 1100px;
-  max-width: 1600px;
+
   background-color: #0a2850;
   color: white;
   display: flex;
@@ -31,6 +31,11 @@
   font-size: 20px;
   line-height: 30px;
 }
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .about__circle {
   height: 426px;
   width: 426px;
